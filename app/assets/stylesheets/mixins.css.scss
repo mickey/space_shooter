@@ -1,0 +1,10 @@
+@mixin glow($color) {
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: $color;
+  -webkit-fill-color: $color;
+  text-shadow: 1px 0px 20px $color;
+  -webkit-transition: width 0.3s; /*Safari & Chrome*/
+  transition: width 0.3s;
+  -moz-transition: width 0.3s; /* Firefox 4 */
+  -o-transition: width 0.3s; /* Opera */
+}

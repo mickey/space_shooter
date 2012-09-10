@@ -1,0 +1,70 @@
+@import 'mixins';
+
+.controls {
+  font-size: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .button {
+    margin-bottom: 30px;
+    color:red;
+
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .hover {
+    @include glow(red);
+    background: url(ships/baked/Shofixti/start_screen_0.png) no-repeat;
+  }
+}
+
+#game_over {
+  text-align: center;
+
+  h2 {
+    font-size: 80px;
+  }
+
+  .controls {
+    margin-top: 150px;
+    font-size: 50px;
+    width: 580px;
+  }
+}
+
+#menu {
+  margin-top: 35px;
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+  }
+
+  h1 {
+    font-size: 54px;
+    color: white;
+    text-align: center;
+    @include glow(white);
+    color: white;
+  }
+
+  #controls-container {
+    height: 100%;
+
+    .controls {
+      width: 380px;
+      margin-top: 100px;
+      text-align: center;
+
+      .button {
+        padding-left: 40px;
+      }
+
+    }
+  }
+}

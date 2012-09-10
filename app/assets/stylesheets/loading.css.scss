@@ -1,0 +1,23 @@
+#loading {
+  .progress {
+    width: 400px;
+    height: 35px;
+
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left: -200px;
+    margin-top: -17px;
+    z-index: 200;
+
+    background:#FFF; /* fallback for browser that not support rgba */
+    background:rgb(255,255,255);
+    background: rgba(255,255,255, .3); /* Works on all modern browsers */
+
+    .bar {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body, html {
+  overflow: hidden;
+  font-family: 'Audiowide', cursive;
+  font-size: 48px;
+}
+
+#cr-stage{
+  position: absolute;
+}
+
+#game, #menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+#game {
+  display: none;
+}
+
+#pause {
+  color:red;
+  width: 170px;
+  height: 70px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left: -85px;
+  margin-top: -35px;
+  z-index: 200;
+}
+
+#life {
+  top: auto;
+  overflow: visible;
+  position: fixed;
+  z-index: 1030;
+  margin-bottom: 0;
+  bottom: 0;
+  width: 250px;
+  margin-left: 15px;
+
+  .progress {
+    height: 35px;
+    margin-bottom: 35px;
+
+    background:#FFF; /* fallback for browser that not support rgba */
+    background:rgb(255,255,255);
+    background: rgba(255,255,255, .3); /* Works on all modern browsers */
+
+    .bar {
+      width: 100%;
+      height: 100%;
+      padding-top: 5px;
+      font-size: 20px;
+    }
+  }
+}
